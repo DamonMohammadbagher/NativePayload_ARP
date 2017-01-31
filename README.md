@@ -3,11 +3,7 @@ C# code for Backdoor Payloads transfer by ARP Traffic (Slow)
 
 also Bypassing the most Anti-viruses by this technique 
 
-Bug Fixed: bug for NativePayload_ARP fixed by adding new code ;) , 
-
-now you can type local IP-Address for Sending ARP request by your local IP-Address , 
-
-Hard-coded IPAddress in source code Deleted ;) I AM SORRY ;) my mistake , hahhaaha 
+2 Bug Fixed: bug for NativePayload_ARP fixed by adding new code ;).
 
 
 
