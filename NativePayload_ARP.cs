@@ -139,7 +139,8 @@ namespace NativePayload_ARP
                             Console.WriteLine();
                             Arps += temp_arps.Remove(0, 2);
                             string tmp = temp_arps.Remove(0, 2);
-                            if (MacAddress.Count == 0 && tmp.ToString() != "ffffffffff" && tmp.ToString() != "00ff00ff00ff" && init)
+                            /// tmp.ToString() != "00ff00ff00ff" ==> bug2 here, this should be ff00ff00ff
+                            if (MacAddress.Count == 0 && tmp.ToString() != "ffffffffff" && tmp.ToString() != "ff00ff00ff" && init)
                             {
                                 MacAddress.Add(tmp);
                                 Console.ForegroundColor = ConsoleColor.Cyan;
