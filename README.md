@@ -9,9 +9,8 @@ also Bypassing the most Anti-viruses by this technique
 
 Warning this Acc maybe Hacked by someone ;-(
 
-guys i don't know why , but i uploaded 3 time my Fixed NativePayload_ARP.exe to this Site and 2 time my Fixed C# Source code too
-but someone Changed my Exe ;( i don't know why and who did that , So maybe this Account hacked ;) hahaha anyway.
-just watching my Source code and my Article about this "PoC" and create your own Code please ;) i can't do anything in this case ;)
+someone changed my source code for NativePayload_ARP ( 3 times ) and changed my exe files too , ;) , so EXE files deleted by me , just make your own code by this article , it is better than executing my EXE files
+just watching my Source code and my Article about this "PoC" and create your own Code please.
 
 linkedin link : https://www.linkedin.com/pulse/transfer-backdoor-payloads-arp-traffic-bypassing-avs-mohammadbagher?trk=pulse_spock-articles
 
