@@ -1,4 +1,4 @@
-this C# source code worked by Macchanger command in linux base systems
+this C# source code customized to working by Macchanger command in linux base systems
 
 so this NativePayload_ARP supported macchanger command in linux and in this case not needed to use Payload_to_Mac.exe .
 
