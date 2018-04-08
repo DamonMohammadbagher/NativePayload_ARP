@@ -166,7 +166,7 @@ namespace NativePayload_ARP
             /// for debug only
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("Debug Mode , Dumping this payload by ARP Traffic:");
-            Console.WriteLine("Debug Mode , you can compare this Dump Data by your Source Payload \"Meterpreter msfvennom C type payload\"");
+            Console.WriteLine("Debug Mode , you can compare this Dump Data by your Source Payload \"Meterpreter msfvenom C type payload\"");
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             foreach (string item in MacAddress)
             {
