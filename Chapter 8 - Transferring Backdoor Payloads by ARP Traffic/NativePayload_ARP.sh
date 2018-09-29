@@ -29,7 +29,7 @@ then
 		if (( `echo ${#Exfil}` == 15 ))
 		then 
 		tput setaf 7;	
-		echo "[!] your text is:" `echo 00:"${Exfil::-1}" | xxd -r -p `
+		echo "[!] your text is:" `echo $Exfil | xxd -r -p `
 		tput setaf 6;	
 		echo "[!] your MAC Address is:" 00:"${Exfil::-1}"
 		#echo "sudo ifconfig eth0 down; sudo macchanger -m " 00:"${Exfil::-1}" " eth0; sudo ifconfig eth0 up; sleep x;"
