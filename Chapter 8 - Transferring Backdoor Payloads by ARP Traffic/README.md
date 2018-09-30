@@ -24,7 +24,7 @@ STEP 2 : after "AV Signature Database Updated" your Internet Connection should b
 
 STEP 3 : Now you can Copy and Paste your C# code to your Virtual Machine for test .
 
-# Syntax :
+# NativePayload_ARP.sh  help :
 
 Example Step1: (Client Side ) ./NativePayload_ARP.sh -s text-file eth0 delay x"
 
