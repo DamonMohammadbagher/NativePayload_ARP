@@ -13,7 +13,7 @@ tput setaf 2;
 	echo "Example Step2: (Server Side ) ./NativePayload_ARP.sh -a vboxnet target-IPv4 x"
 	echo "example IPv4:192.168.56.101 : ./NativePayload_ARP.sh -s mytext.txt eth0 delay 3"
 	echo "example IPv4:192.168.56.1 : ./NativePayload_DNS2.sh -a vboxnet 192.168.56.101 3"
-	echo "Description: with Step1 you will inject Data to MAC address for eth0 , with Step2 you can Dump this text file via Scanning target-system by ARP traffic (Using Arping tool)"
+	echo "Description: with Step1 you will inject Data to MAC address for eth0 , with Step2 you can have this text file via Scanning target-system by ARP traffic (Using Arping tool)"
 	echo
 	
 fi
