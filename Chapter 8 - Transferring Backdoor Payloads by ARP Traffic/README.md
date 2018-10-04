@@ -8,9 +8,9 @@ eBook chapter 8 , PDF Download : https://github.com/DamonMohammadbagher/eBook-By
 
 Related Video : 
 
-Video 1 for chapter 8: 
+Video 1 C# Code : https://youtu.be/qDLicXj7Vuk
 
-Video 2 for chapter 8:
+Video 2 (Linux only) Script Code : https://www.youtube.com/watch?v=O-llNZ9S8Mo
 
 
 
