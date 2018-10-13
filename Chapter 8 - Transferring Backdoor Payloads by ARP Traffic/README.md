@@ -38,7 +38,7 @@ Description: with Step1 you will inject Data to MAC address for eth0 , with Step
 
 # Note : "NativePayload_ARP.sh" tested by (arping utility, iputils-s20161105 and kali linux 2018.2)
 
-# Note : yeah if you want to use "vboxnet" , it means you will have one bridge between Virtual Machine to Physical Machine ;) lol 
+# Note : if you want to use "vboxnet" , it means you will have one bridge between Virtual Machine to Physical Machine ;) lol 
 
 ![](https://github.com/DamonMohammadbagher/NativePayload_ARP/blob/master/Chapter%208%20-%20Transferring%20Backdoor%20Payloads%20by%20ARP%20Traffic/x1.png)
 
