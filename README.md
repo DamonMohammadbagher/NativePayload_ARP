@@ -5,7 +5,7 @@ also Bypassing the most Anti-viruses by this technique
 
 2 Bug Fixed: bug for NativePayload_ARP fixed by adding new code ;).
 
-############################### Warning ############################### Warning ###############################
+############################### Warning ###########################
 
 Warning this Acc maybe Hacked by someone ;-(
 
@@ -16,7 +16,7 @@ linkedin link : https://www.linkedin.com/pulse/transfer-backdoor-payloads-arp-tr
 
 link 2 , step by step PoC: https://www.peerlyst.com/posts/transfer-backdoor-payloads-by-arp-traffic-and-bypassing-avs-damon-mohammadbagher?trk=user_notification#undefined
 
-############################### Warning ############################### Warning ###############################
+############################### Warning ###########################
 
 with this technique you can transfer your payloads by ARP traffic
 
@@ -29,3 +29,5 @@ link : https://www.peerlyst.com/posts/transfer-backdoor-payloads-by-arp-traffic-
 Transfer Backdoor Payloads by ARP Traffic
 
 video : https://youtu.be/qDLicXj7Vuk
+
+<p><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/DamonMohammadbagher/NativePayload_ARP"/></a></p>
